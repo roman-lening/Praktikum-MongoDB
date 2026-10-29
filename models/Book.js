@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 const bookSchema = new mongoose.Schema({
-  name: { type: String, required: true },
+  title: { type: String, required: true },
+  publishedDate: { type: Date, required: true },
   author: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Author",
